@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Work.ink popup ads -->
+  <script src="https://cdn.work.ink/js/redirect.js?id=1200" data-url="https://work.ink/direct/1200" data-max="5"></script>
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Discord</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .box {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px #ff8000;
+    }
+
+    #continueBtn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: white;
+      color: orange;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: not-allowed;
+      transition: 0.3s ease;
+    }
+
+    #continueBtn.enabled {
+      background: orange;
+      color: white;
+      cursor: pointer;
+    }
+
+    #adblock-msg {
+      display: none;
+      margin-top: 15px;
+      color: red;
+      font-weight: bold;
+    }
+
+    .ads-wrapper {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🔗 HackManHub Discord 🔗</h1>
+    <p>Verifying you're not using an ad blocker if countdown frozen and ads dont show up that means adblocker detected turn them off</p>
+    <p id="adblock-msg">❌ AdBlock Detected! turn them off</p>
+    <p>Continue in <span id="countdown">10</span> seconds...</p>
+
+    <button id="continueBtn">Join Discord</button>
+
+    <div class="ads-wrapper">
+      <!-- Adsterra Banner Ad 728x90 -->
+      <div id="adsterra-top-ad">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '028f39517473b373c62636ed6a77798e',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="https://www.profitabledisplaynetwork.com/028f39517473b373c62636ed6a77798e/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+
+      <!-- Adsterra Banner Ad 300x250 -->
+      <div id="adsterra-bottom-ad" style="margin-top:20px;">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '028f39517473b373c62636ed6a77798e',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="https://www.profitabledisplaynetwork.com/028f39517473b373c62636ed6a77798e/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const countdownEl = document.getElementById("countdown");
+    const btn = document.getElementById("continueBtn");
+    const adblockMsg = document.getElementById("adblock-msg");
+
+    let timeLeft = 10;
+    let countdownTimer;
+
+    function disableButton() {
+      btn.disabled = true;
+      btn.classList.remove("enabled");
+      btn.style.cursor = "not-allowed";
+      btn.onclick = null;
+    }
+
+    function enableButton() {
+      btn.disabled = false;
+      btn.classList.add("enabled");
+      btn.style.cursor = "pointer";
+      btn.onclick = function () {
+        window.location.href = "https://discord.gg/KmtXAzbDTy";
+      };
+    }
+
+    function startCountdown() {
+      countdownTimer = setInterval(() => {
+        timeLeft--;
+        countdownEl.textContent = timeLeft;
+        if (timeLeft <= 0) {
+          clearInterval(countdownTimer);
+          enableButton();
+        }
+      }, 1000);
+    }
+
+    function detectAdblock() {
+      const bait = document.createElement("div");
+      bait.className = "adsbox ad adsense banner ad-banner ad-container ad-banner-box";
+      bait.style.cssText = "width: 1px; height: 1px; position: absolute; top: -1000px;";
+      document.body.appendChild(bait);
+
+      setTimeout(() => {
+        const isBaitBlocked = bait.offsetHeight === 0 || bait.offsetParent === null;
+        const ad1 = document.querySelector("#adsterra-top-ad iframe");
+        const ad2 = document.querySelector("#adsterra-bottom-ad iframe");
+        const isAdMissing = !ad1 || !ad2;
+
+        if (isBaitBlocked || isAdMissing) {
+          clearInterval(countdownTimer);
+          disableButton();
+          adblockMsg.style.display = "block"; // ✅ always show if detected
+        } else {
+          startCountdown();
+        }
+
+        bait.remove();
+      }, 5000);
+    }
+
+    window.addEventListener("load", function () {
+      setTimeout(detectAdblock, 5000);
+    });
+  </script>
+</body>
+</html>
