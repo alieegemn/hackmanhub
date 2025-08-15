@@ -1,0 +1,169 @@
+/* Futuristic theme */
+:root {
+  --bg: #0A0806;
+  --bg-soft: #110d08;
+  --text: #ffeede;
+  --muted: #c7b7a3;
+  /* Orange-focused palette */
+  --brand1: #FFD9A3; /* light */
+  --brand2: #FF8A00; /* primary */
+  --brand3: #FF5E00; /* deep */
+  --brand4: #FFB86B; /* accent */
+  --shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(255,184,107,0.08), transparent 60%),
+              radial-gradient(1000px 500px at 10% 10%, rgba(255,94,0,0.08), transparent 60%),
+              linear-gradient(180deg, var(--bg) 0%, #090604 100%);
+  overflow-x: hidden;
+}
+
+/* Starfield canvas behind everything */
+#starfield {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background: transparent;
+}
+
+.site-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.nav { display: flex; gap: 10px; }
+
+.btn { 
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 38px; padding: 0 14px; border-radius: 999px; 
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-decoration: none; color: var(--text);
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+
+.btn-discord {
+  background: linear-gradient(135deg, rgba(124,249,255,0.12), rgba(122,92,255,0.12));
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--brand2), var(--brand3));
+  color: #1b0f06; border: 0; font-weight: 700;
+  box-shadow: 0 8px 30px rgba(255, 138, 0, 0.35);
+}
+.btn-primary:hover { filter: brightness(1.05); }
+
+.btn-ghost {
+  background: rgba(255,255,255,0.04);
+}
+/* Orange accent button (used for Discord) */
+.btn-accent {
+  background: linear-gradient(135deg, rgba(255,184,107,0.22), rgba(255,138,0,0.22));
+  color: var(--text);
+  border-color: rgba(255,138,0,0.6);
+  box-shadow: 0 8px 30px rgba(255, 138, 0, 0.25);
+}
+.btn-accent:hover { filter: brightness(1.06); }
+
+.hero {
+  min-height: 88vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22vh 24px 0;
+  text-align: center;
+}
+
+.title { 
+  font-family: Orbitron, Inter, sans-serif;
+  font-weight: 900; letter-spacing: 1px; 
+  font-size: clamp(44px, 9vw, 120px);
+  line-height: 1.05; margin: 0 0 14px; 
+  background: linear-gradient(90deg, #fff, #b3b8ff 30%, #ffd2e8 60%, #fff);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 10px 30px rgba(255, 46, 151, 0.15));
+}
+.title .accent { 
+  background: linear-gradient(90deg, var(--brand4), var(--brand2), var(--brand3));
+  -webkit-background-clip: text; background-clip: text; color: transparent; 
+}
+
+.tag { color: var(--muted); font-size: clamp(14px, 2.6vw, 20px); margin: 0 auto 28px; }
+
+.cta { display: flex; gap: 12px; justify-content: center; margin-bottom: 32px; }
+
+.wave { position: relative; max-width: 1440px; margin: 20px auto 0; }
+.wave svg { display: block; width: 100%; height: auto; filter: drop-shadow(0 40px 60px rgba(255, 46, 151, 0.18)); }
+.wave .glow { position: absolute; inset: auto 0 -80px 0; height: 160px; background: radial-gradient(60% 100% at 50% 0%, rgba(255,142,0,0.25), transparent 70%); filter: blur(30px); }
+
+.features { 
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; 
+  max-width: 1100px; margin: 40px auto; padding: 0 24px 80px;
+}
+.feature { 
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px; padding: 20px; 
+  box-shadow: var(--shadow);
+}
+.feature h3 { margin: 0 0 8px; font-family: Orbitron; letter-spacing: .5px; }
+.feature p { margin: 0; color: var(--muted); }
+
+/* Premium page */
+.products { 
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px;
+  max-width: 1100px; margin: 20px auto; padding: 0 24px;
+}
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px; overflow: hidden; box-shadow: var(--shadow);
+  display: flex; flex-direction: column;
+}
+.card img { width: 100%; height: 160px; object-fit: cover; background:#1d130a; }
+.card .body { padding: 14px; display: grid; gap: 8px; }
+.card .title { font-family: Orbitron; font-size: 18px; margin: 0; }
+.card .price { color: #ffd9a3; font-weight: 700; }
+.card .actions { display:flex; gap:10px; }
+.card .actions .btn { flex: 1; }
+
+.checkout { 
+  max-width: 900px; margin: 40px auto 80px; padding: 20px 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+}
+.checkout h2 { margin: 0 0 12px; font-family: Orbitron; }
+.checkout .row { display:flex; gap:16px; flex-wrap: wrap; }
+.checkout .col { flex: 1 1 260px; }
+.checkout label { font-size: 12px; color: var(--muted); }
+.checkout input, .checkout select { width: 100%; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); color: var(--text); }
+.checkout .summary { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px; }
+.checkout .summary .line { display:flex; justify-content: space-between; margin: 6px 0; color: var(--muted); }
+.checkout .summary .total { color: #ffd9a3; font-weight: 800; font-size: 18px; }
+.checkout .actions { margin-top: 14px; display:flex; gap:10px; justify-content: flex-end; }
+
+.site-footer { text-align: center; color: #838aa3; padding: 40px 0 60px; }
+
+/* Floating orbs for extra futurism */
+body::before, body::after {
+  content: '';
+  position: fixed; z-index: -1; border-radius: 50%;
+  filter: blur(40px); opacity: .35;
+}
+body::before { width: 280px; height: 280px; left: -60px; top: 20%; background: radial-gradient(circle, var(--brand2), transparent 70%); }
+body::after { width: 360px; height: 360px; right: -80px; bottom: 10%; background: radial-gradient(circle, var(--brand3), transparent 70%); }
+
