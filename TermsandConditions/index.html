@@ -55,13 +55,13 @@
             transform: translateY(-50%); /* Pulls the element up by half its height for vertical centering */
             right: 20px; /* Distance from the right edge */
         }
-
-        /* Specific style for the bottom-middle banner */
-        .bottom-middle-banner {
-            bottom: 20px; /* Distance from the bottom edge */
+		 
+       .top-middle-banner {
+            top: 20px; /* Distance from the top edge */
             left: 50%; /* Position from the left */
             transform: translateX(-50%); /* Pulls the element left by half its width for horizontal centering */
         }
+        /* Specific style for the bottom-middle banner */
 
         /* Basic styling for content to show scrolling */
         .main-content {
@@ -112,9 +112,10 @@
 
     </div>
 
-    <!-- This is the container for your BOTTOM-MIDDLE banner script -->
-    <div class="banner-container bottom-middle-banner">
-   <script type="text/javascript">
+   
+    <div class="banner-container top-middle-banner">
+        <!-- The banner script -->
+<script type="text/javascript">
 	atOptions = {
 		'key' : '7d21f985b226d21a4da82b9662f070d0',
 		'format' : 'iframe',
@@ -124,8 +125,8 @@
 	};
 </script>
 <script type="text/javascript" src="//herringbucket.com/7d21f985b226d21a4da82b9662f070d0/invoke.js"></script>
-        <!-- Placeholder for where the ad iframe would be injected by the external script. -->
     </div>
+
 </body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
