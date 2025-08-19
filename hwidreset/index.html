@@ -1,8 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-
-
 
   <!-- Work.ink popup ads -->
   <script src="https://cdn.work.ink/js/redirect.js?id=1200" data-url="https://work.ink/direct/1200" data-max="5"></script>
@@ -10,222 +7,162 @@
   <!-- Adsterra popup ads -->
 	
 	<script type='text/javascript' src='//herringbucket.com/c5/d7/1f/c5d71ff5e5a27cd2d21c877edcf8deda.js'></script>
-
   
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HackManHub — Home</title>
-  <meta name="description" content="Undetected scripts and best scripts — reimagined with a futuristic aesthetic." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="UTF-8">
+  <title>HWID RESET</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .box {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px #ff8000;
+    }
+
+    #continueBtn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: white;
+      color: orange;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: not-allowed;
+      transition: 0.3s ease;
+    }
+
+    #continueBtn.enabled {
+      background: orange;
+      color: white;
+      cursor: pointer;
+    }
+
+    #adblock-msg {
+      display: none;
+      margin-top: 15px;
+      color: red;
+      font-weight: bold;
+    }
+
+    .ads-wrapper {
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
+  <div class="box">
+    <h1>Key HWID Reset</h1>
+    <p>Verifying you're not using an ad blocker if countdown frozen and ads dont show up that means adblocker detected turn them off</p>
+    <p id="adblock-msg">❌ AdBlock Detected! turn them off</p>
+    <p>Continue in <span id="countdown">10</span> seconds...</p>
 
+    <button id="continueBtn">Reset Key HWID</button>
 
-  <script type='text/javascript' src='//herringbucket.com/89/a6/e1/89a6e16a0b4a3cb89b82e7906afea5de.js'></script>
+    <div class="ads-wrapper">
+      <!-- Adsterra Banner Ad 728x90 -->
+      <div id="adsterra-top-ad">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '028f39517473b373c62636ed6a77798e',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="https://www.profitabledisplaynetwork.com/028f39517473b373c62636ed6a77798e/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
 
+      <!-- Adsterra Banner Ad 300x250 -->
+      <div id="adsterra-bottom-ad" style="margin-top:20px;">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '028f39517473b373c62636ed6a77798e',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+          document.write('<scr' + 'ipt type="text/javascript" src="https://www.profitabledisplaynetwork.com/028f39517473b373c62636ed6a77798e/invoke.js"></scr' + 'ipt>');
+        </script>
+      </div>
+    </div>
+  </div>
 
-     <style>
-        /* Apply a basic reset and font */
-        body {
-            margin: 0;
-            font-family: "Inter", sans-serif;
-            min-height: 100vh; /* Ensure body takes full viewport height */
-            background-color: #f0f2f5; /* Light background for visibility */
-            display: flex; /* Use flexbox for main content if needed */
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: #333;
+  <script>
+    const countdownEl = document.getElementById("countdown");
+    const btn = document.getElementById("continueBtn");
+    const adblockMsg = document.getElementById("adblock-msg");
+
+    let timeLeft = 10;
+    let countdownTimer;
+
+    function disableButton() {
+      btn.disabled = true;
+      btn.classList.remove("enabled");
+      btn.style.cursor = "not-allowed";
+      btn.onclick = null;
+    }
+
+    function enableButton() {
+      btn.disabled = false;
+      btn.classList.add("enabled");
+      btn.style.cursor = "pointer";
+      btn.onclick = function () {
+        // Replace with your actual redirect link
+        window.location.href = "https://pandadevelopment.net/reset-hwid?service=hackmanhubreal";
+      };
+    }
+
+    function startCountdown() {
+      countdownTimer = setInterval(() => {
+        timeLeft--;
+        countdownEl.textContent = timeLeft;
+        if (timeLeft <= 0) {
+          clearInterval(countdownTimer);
+          enableButton();
+        }
+      }, 1000);
+    }
+
+    function detectAdblock() {
+      const bait = document.createElement("div");
+      bait.className = "adsbox ad adsense banner ad-banner ad-container ad-banner-box";
+      bait.style.cssText = "width: 1px; height: 1px; position: absolute; top: -1000px;";
+      document.body.appendChild(bait);
+
+      setTimeout(() => {
+        const isBaitBlocked = bait.offsetHeight === 0 || bait.offsetParent === null;
+        const ad1 = document.querySelector("#adsterra-top-ad iframe");
+        const ad2 = document.querySelector("#adsterra-bottom-ad iframe");
+        const isAdMissing = !ad1 || !ad2;
+
+        if (isBaitBlocked || isAdMissing) {
+          clearInterval(countdownTimer);
+          disableButton();
+          adblockMsg.style.display = "block";
+        } else {
+          startCountdown();
         }
 
-        /* Base styles for all banner containers */
-        .banner-container {
-            position: fixed;
-            z-index: 1000; /* Ensure it stays on top of other content */
-            background-color: #ffffff; /* White background for the banner */
-            padding: 10px; /* Some padding around the banner */
-            border-radius: 8px; /* Slightly rounded corners */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-            display: flex; /* Helps center the iframe if it's smaller */
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Hide any overflow from the iframe */
-        }
+        bait.remove();
+      }, 5000);
+    }
 
-        /* Specific style for the left banner */
-        .left-banner {
-            top: 50%; /* Position from the top */
-            transform: translateY(-50%); /* Pulls the element up by half its height for vertical centering */
-            left: 20px; /* Distance from the left edge */
-        }
-
-        /* Specific style for the right banner */
-        .right-banner {
-            top: 50%; /* Position from the top */
-            transform: translateY(-50%); /* Pulls the element up by half its height for vertical centering */
-            right: 20px; /* Distance from the right edge */
-        }
-
-        /* Specific style for the bottom-middle banner */
-        .bottom-middle-banner {
-            bottom: 20px; /* Distance from the bottom edge */
-            left: 50%; /* Position from the left */
-            transform: translateX(-50%); /* Pulls the element left by half its width for horizontal centering */
-        }
-
-        /* Basic styling for content to show scrolling */
-        .main-content {
-            height: 1500px; /* Make content tall enough to demonstrate fixed positioning */
-            width: 80%;
-            max-width: 800px;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            /* Adjusted margins to accommodate both top and bottom banners */
-            margin-top: 150px;    /* Space for the top-middle banner */
-            margin-bottom: 150px; /* Space for the bottom-middle banner */
-        }
-    </style>
-</head>
-<body>
-
-    <!-- This is the container for your LEFT banner script -->
-    <div class="banner-container left-banner">
-        <!-- Your original script goes here -->
-<script type="text/javascript">
-	atOptions = {
-		'key' : '028f39517473b373c62636ed6a77798e',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//herringbucket.com/028f39517473b373c62636ed6a77798e/invoke.js"></script>
-    </div>
-
-    <!-- This is the container for your RIGHT banner script -->
-    <div class="banner-container right-banner">
-    <script type="text/javascript">
-	atOptions = {
-		'key' : '028f39517473b373c62636ed6a77798e',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//herringbucket.com/028f39517473b373c62636ed6a77798e/invoke.js"></script>
-
-
-    </div>
-
-    <!-- This is the container for your BOTTOM-MIDDLE banner script -->
-    <div class="banner-container bottom-middle-banner">
-   <script type="text/javascript">
-	atOptions = {
-		'key' : '7d21f985b226d21a4da82b9662f070d0',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//herringbucket.com/7d21f985b226d21a4da82b9662f070d0/invoke.js"></script>
-        <!-- Placeholder for where the ad iframe would be injected by the external script. -->
-    </div>
-  
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <header class="site-header">
-    <a class="btn btn-accent" href="#" id="discordBtn" rel="noopener">Join Discord</a>
-    <nav class="nav">
-      <a class="btn btn-primary" href="https://hackmanhub.pages.dev/premium" id="buyPremium">Buy Premium</a>
-    </nav>
-  </header>
-
-  <main class="hero">
-    <h1 class="title"><span>Hack</span><span class="accent">Man</span><span>Hub</span></h1>
-    <p class="tag">Undetected Scripts • Best Scripts • Free And Paid</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="#features">Explore</a>
-      <a class="btn btn-primary" href="https://hackmanhub.pages.dev/premium">Buy Premium</a>
-      <a class="btn btn-accent" href="https://hackmanhub.pages.dev/discord" target="_blank" rel="noopener">Join Discord</a>
-      
-        
-    </div>
-    <div class="wave" aria-hidden="true">
-      <!-- Decorative SVG wave -->
-      <svg viewBox="0 0 1440 240" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#FFB86B" />
-            <stop offset="30%" stop-color="#FF8A00" />
-            <stop offset="60%" stop-color="#FF5E00" />
-            <stop offset="100%" stop-color="#FFD9A3" />
-          </linearGradient>
-        </defs>
-        <path d="M0,160 C200,200 300,120 480,160 C660,200 760,120 960,160 C1160,200 1240,120 1440,160 L1440,240 L0,240 Z" fill="url(#grad)" opacity="0.9">
-        </path>
-      </svg>
-      <div class="glow"></div>
-    </div>
-  </main>
-  
-  <script type="text/javascript">
-	atOptions = {
-		'key' : '8683ed64eb9e512b97d8d63bc0c447ef',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-
-<script type="text/javascript"> atOptions = { 'key' : '028f39517473b373c62636ed6a77798e', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} }; </script> 
-
-
-
-
-
-<script type="text/javascript" src="//herringbucket.com/8683ed64eb9e512b97d8d63bc0c447ef/invoke.js"></script>
-
-    <script type="text/javascript"> atOptions = { 'key' : '028f39517473b373c62636ed6a77798e', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} }; </script> 
-    
-    <script type="text/javascript" src="//herringbucket.com/028f39517473b373c62636ed6a77798e/invoke.js"></script>
-    
-    
-    
-    
-</script>
-<script type="text/javascript" src="//herringbucket.com/70f3c2daf58ac6e72a43723f3bcfde92/invoke.js"></script>
-  
-  <section id="features" class="features">
-    <div class="feature">
-      <h3>UnDetected</h3>
-      <p> keep you undetected.</p>
-    </div>
-    <div class="feature">
-      <h3>Speed</h3>
-      <p>We Are Checking if it patched and fixing it lightspeed</p>
-    </div>
-    <div class="feature">
-      <h3>Control</h3>
-      <p>Modular toggles, per-game profiles, and cloud-synced presets.</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> HackManHub.</p>
-  </footer>
-  
-
-  <script src="./js/app.js"></script>
-
+    window.addEventListener("load", function () {
+      setTimeout(detectAdblock, 5000);
+    });
+  </script>
 </body>
 </html>
