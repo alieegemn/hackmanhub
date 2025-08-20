@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Fixed Banners Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Adsterra popup ads -->
+    
+    <script type='text/javascript' src='//herringbucket.com/c5/d7/1f/c5d71ff5e5a27cd2d21c877edcf8deda.js'></script>
+    
+    
+    <style>
+        /* Apply a basic reset and font */
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            background-color: #f0f2f5; /* Light background for visibility */
+            display: flex; /* Use flexbox for main content if needed */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #333;
+        }
+
+        /* Base styles for all banner containers */
+        .banner-container {
+            position: fixed;
+            z-index: 1000; /* Ensure it stays on top of other content */
+            background-color: #ffffff; /* White background for the banner */
+            padding: 10px; /* Some padding around the banner */
+            border-radius: 8px; /* Slightly rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            display: flex; /* Helps center the iframe if it's smaller */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Hide any overflow from the iframe */
+        }
+
+        /* Specific style for the left banner */
+        .left-banner {
+            top: 50%; /* Position from the top */
+            transform: translateY(-50%); /* Pulls the element up by half its height for vertical centering */
+            left: 20px; /* Distance from the left edge */
+        }
+
+        /* Specific style for the right banner */
+        .right-banner {
+            top: 50%; /* Position from the top */
+            transform: translateY(-50%); /* Pulls the element up by half its height for vertical centering */
+            right: 20px; /* Distance from the right edge */
+        }
+
+        /* Specific style for the top-middle banner */
+        .top-middle-banner {
+            top: 20px; /* Distance from the top edge */
+            left: 50%; /* Position from the left */
+            transform: translateX(-50%); /* Pulls the element left by half its width for horizontal centering */
+        }
+
+        /* Specific style for the bottom-middle banner */
+        .bottom-middle-banner {
+            bottom: 20px; /* Distance from the bottom edge */
+            left: 50%; /* Position from the left */
+            transform: translateX(-50%); /* Pulls the element left by half its width for horizontal centering */
+        }
+
+        /* Basic styling for content to show scrolling */
+        .main-content {
+            height: 1500px; /* Make content tall enough to demonstrate fixed positioning */
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            /* Adjusted margins to accommodate both top and bottom banners */
+            margin-top: 150px;    /* Space for the top-middle banner */
+            margin-bottom: 150px; /* Space for the bottom-middle banner */
+        }
+    </style>
+</head>
+
+<script type='text/javascript' src='//herringbucket.com/89/a6/e1/89a6e16a0b4a3cb89b82e7906afea5de.js'></script>
+
+<body>
+
+    <!-- This is the container for your LEFT banner script -->
+    <div class="banner-container left-banner">
+        <!-- Your original script goes here -->
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '028f39517473b373c62636ed6a77798e',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//herringbucket.com/028f39517473b373c62636ed6a77798e/invoke.js"></script>
+    </div>
+
+    <!-- This is the container for your RIGHT banner script -->
+    <div class="banner-container right-banner">
+        <!-- Your original script goes here again, or a similar one for a different ad -->
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '028f39517473b373c62636ed6a77798e',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//herringbucket.com/028f39517473b373c62636ed6a77798e/invoke.js"></script>
+    </div>
+
+    <!-- This is the container for your TOP-MIDDLE banner script -->
+    <div class="banner-container top-middle-banner">
+     <script type="text/javascript">
+	atOptions = {
+		'key' : '7d21f985b226d21a4da82b9662f070d0',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//herringbucket.com/7d21f985b226d21a4da82b9662f070d0/invoke.js"></script>
+    </div>
+
+    <!-- This is the container for your BOTTOM-MIDDLE banner script -->
+    <div class="banner-container bottom-middle-banner">
+        <!-- A copy of the middle banner script -->
+<script type="text/javascript">
+	atOptions = {
+		'key' : '7d21f985b226d21a4da82b9662f070d0',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//herringbucket.com/7d21f985b226d21a4da82b9662f070d0/invoke.js"></script>
+    </div>
+    
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '70f3c2daf58ac6e72a43723f3bcfde92',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//herringbucket.com/70f3c2daf58ac6e72a43723f3bcfde92/invoke.js"></script>
+    
+    
+    <div style="position: relative;"><iframe src="https://publisher.linkvertise.com/cdn/ads/LV-336x280/index.html" frameborder="0" height="280" width="336"></iframe><a href="https://publisher.linkvertise.com/ac/448170" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a></div>
+    
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '70f3c2daf58ac6e72a43723f3bcfde92',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//herringbucket.com/70f3c2daf58ac6e72a43723f3bcfde92/invoke.js"></script>
+
+<p>This ad corner by 
+  <span id="hackmanhub" style="color: orange; cursor: pointer; text-decoration: underline;">
+    HackManHub
+  </span>.
+</p>
+
+<!-- Custom Popup Modal -->
+<div id="customPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+     background: rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:white; padding:20px; border-radius:10px; width:300px; text-align:center; position:relative;">
+    <p>Are you sure you want to visit HackManHub?</p>
+    <!-- You can insert an ad here -->
+    <div style="margin:10px 0;">
+      <button id="yesBtn" style="margin-right:10px; padding:5px 15px;">Yes</button>
+      <button id="noBtn" style="padding:5px 15px;">No</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const hackmanhub = document.getElementById("hackmanhub");
+const popup = document.getElementById("customPopup");
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+
+hackmanhub.addEventListener("click", () => {
+  popup.style.display = "flex"; // show popup
+});
+
+yesBtn.addEventListener("click", () => {
+  window.location.href = "https://hackmanhub.pages.dev"; // redirect
+});
+
+noBtn.addEventListener("click", () => {
+  popup.style.display = "none"; // close popup
+});
+</script>
+
+
+
+
+
+</body>
+
+<script type='text/javascript' src='//herringbucket.com/89/a6/e1/89a6e16a0b4a3cb89b82e7906afea5de.js'></script>
+
+</html>
