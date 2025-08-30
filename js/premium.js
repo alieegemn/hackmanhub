@@ -38,7 +38,7 @@
     }
   }
 
-  function euro(n){ return new Intl.NumberFormat(undefined,{style:'currency',currency:'EUR'}).format(n); }
+  function usd(n){ return new Intl.NumberFormat(undefined,{style:'currency',currency:'USD'}).format(n); }
 
   function render(){
     productsEl.innerHTML = products.map(p => `
@@ -46,7 +46,7 @@
         <img src="${p.image}" alt="${p.name}">
         <div class="body">
           <h3 class="title">${p.name}</h3>
-          <p class="price">${euro(p.price_eur)}</p>
+          <p class="price">${usd(p.price_eur)}</p>
           <p class="desc" style="color:#c7b7a3">${p.description ?? ''}</p>
           <div class="actions">
             <button class="btn btn-primary" data-buy="${p.id}">Buy</button>
@@ -60,17 +60,12 @@
     $$('[data-buy]').forEach(btn => btn.addEventListener('click', () => openCheckout(btn.getAttribute('data-buy'))));
   }
 
-  function withQuery(url, params){
-    const u = new URL(url, window.location.origin);
-    Object.entries(params).forEach(([k,v]) => u.searchParams.set(k, String(v)));
-    return u.toString();
-  }
 
   function renderPayButtons(product){
     const cfg = window.HMH_PAY_CONFIG || { buttons: [] };
     payButtonsEl.innerHTML = cfg.buttons.map(b => {
       const cls = b.style === 'accent' ? 'btn btn-accent' : b.style === 'ghost' ? 'btn btn-ghost' : 'btn btn-primary';
-      const href = b.href ? withQuery(b.href, { pid: product.id, name: product.name, amount: product.price_eur }) : '#';
+      const href = b.href || '#';
       return `<a class="${cls}" href="${href}" target="_blank" rel="noopener" data-pay-id="${b.id}">${b.label}</a>`;
     }).join('');
   }
@@ -81,9 +76,9 @@
     const tax = (p.tax_rate ?? 0) * p.price_eur;
     const total = p.price_eur + tax;
     sumName.textContent = p.name;
-    sumPrice.textContent = euro(p.price_eur);
-    sumTax.textContent = euro(tax);
-    sumTotal.textContent = euro(total);
+    sumPrice.textContent = usd(p.price_eur);
+    sumTax.textContent = usd(tax);
+    sumTotal.textContent = usd(total);
     renderPayButtons(p);
     checkout.hidden = false;
     checkout.scrollIntoView({behavior:'smooth'});
