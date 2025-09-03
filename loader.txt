@@ -1,2 +1,682 @@
 -- Anti Skid By HackManHub
 return(function(...)local l={"\090\055\066\086\067\122\101\048\120\090\067\104\077\107\121\085\105\047\073\061","\076\055\073\085\105\104\047\054\101\054\083\068\076\088\088\100\105\111\061\061";"\116\122\077\054\069\047\101\081\101\057\061\061","\056\104\071\074\105\122\047\078\071\070\088\085\120\088\088\070","\067\085\101\116\056\104\090\061","\090\107\101\052\071\114\077\116\076\117\081\114\099\108\101\100","\101\098\110\082\101\109\085\053\075\114\089\061";"\105\109\075\090\069\070\055\107";"\101\109\079\074\115\109\071\050";"\075\107\085\119\101\098\071\073","\076\109\108\054\106\057\061\061","\088\098\108\083\069\098\088\118\089\047\077\081\101\098\088\070\101\098\088\055\089\056\061\061";"\075\114\121\118\076\048\089\061","\075\117\066\068\076\048\089\061","\069\107\088\054\076\109\088\054\115\114\077\119\115\117\066\081","\069\117\108\082\075\098\110\083";"\115\107\119\119\069\111\061\061","\101\122\056\085\120\122\121\120\075\088\077\086\071\112\081\071\101\074\061\061";"","\056\107\071\071\116\048\055\061";"\069\047\077\050\115\090\075\084\067\104\088\073\076\088\069\085\077\107\078\061";"\076\098\088\082";"\069\117\088\083\076\048\075\081";"\069\098\071\119\076\098\074\061";"\115\107\110\082\115\107\108\054";"\101\054\069\066\115\114\077\053\090\070\067\074\071\122\081\114";"\114\085\110\087\115\074\061\061";"\114\085\110\103\075\109\078\061","\069\114\073\107\075\070\119\074\077\114\067\061","\075\048\071\085\115\111\061\061","\114\085\110\083\075\114\077\119\101\098\108\053\076\098\090\061";"\101\098\108\053\076\098\090\061","\116\088\088\089\075\104\119\115\076\112\071\043\101\055\083\115\067\056\061\061","\076\098\110\119\075\122\071\054\069\117\081\082\075\074\061\061","\114\085\110\086\076\117\077\081\099\057\061\061";"\049\081\068\051\078\086\112\087\056\055\049\085\110\104\066\116\117\106\122\107\065\106\053\118\069\049\073\067\050\107\055\071\104\084\098\089\087\118\066\105\047\076\075\108\089\116\067\054\103\070\066\090\072\117\074\116\114\086\076\109\054\056\078\102\070\079\113\052\069\106\071\051\104\116\083\117\115\114\075\098\071\082\097\049\108\113\102\083\105\079\100\048\085\119\067\061","\115\087\081\054\075\056\061\061";"\075\107\108\083\075\056\061\061";"\120\053\111\081\075\051\073\086\120\111\061\061","\076\112\089\061","\106\048\075\100\120\109\081\119\088\081\111\074\088\107\085\112\120\098\055\061","\101\098\110\104\101\122\121\086\076\117\069\061";"\077\098\083\089\101\098\103\074\069\088\056\078\069\112\119\068\056\117\115\061";"\069\048\077\118\106\109\079\087";"\076\112\047\061","\106\098\079\071\069\107\079\079\101\109\078\066\067\047\110\056\067\108\055\061","\120\111\061\061"}for P,Q in ipairs({{-235101+235102,-843386+843433},{120426+-120425;479814+-479801},{45224+-45210,193371-193324}})do while Q[-158461+158462]<Q[-494179-(-494181)]do l[Q[320679+-320678]],l[Q[409206-409204]],Q[-372001-(-372002)],Q[-213106+213108]=l[Q[-333592+333594]],l[Q[348755+-348754]],Q[-371518-(-371519)]+(-1038262-(-1038263)),Q[-40124-(-40126)]-(182984-182983)end end local function P(P)return l[P-(83689-22143)]end do local P=math.floor local Q=type local J=table.concat local e={F=33443+-33408;v=944638-944588;["\052"]=995296+-995254,i=-938310-(-938329);r=234284-234261,E=84067-84039,f=-362039-(-362098),q=822167-822107,C=416325+-416313;a=498496+-498481;P=775584+-775522;z=-216470+216477,D=496883-496836;w=-528967+529000,s=-329327+329351,G=626488-626475;["\050"]=52012-51969;n=382111-382050,["\055"]=-476719-(-476755),J=-189276-(-189324),H=-42595+42658,Y=417827-417819;R=-764060+764106,j=-585444+585470,Z=310297+-310277;e=833392+-833363,h=-742690+742741,["\048"]=-175492+175547,["\051"]=566936+-566934,K=740678-740653,U=-1014773-(-1014826),l=532269-532264;y=-855616-(-855625),W=788726+-788687;m=-981842+981864,A=-76235-(-76245),["\057"]=-268355+268355,b=765085-765079;p=887274-887271;["\049"]=144449-144418;["\043"]=-746284+746295;g=-996026+996070,X=-229401-(-229422);["\056"]=-461918+461934,t=843128+-843110;d=37152-37094,I=-892647+892687;B=-146249-(-146298);Q=-547772+547809;N=-351215-(-351271);V=-803068+803109;M=487841-487824,c=-238579-(-238609);L=129802+-129775;["\047"]=-103791-(-103795);u=-758334+758372,["\054"]=-939470-(-939522),S=564223+-564178;x=479201-479187;k=749030+-748976,["\053"]=428953-428919,O=520244+-520187,o=54542+-54510,T=-893680+893681}local t=string.len local F=table.insert local H=string.char local S=string.sub local D=l for l=99058+-99057,#D,-347806-(-347807)do local j=D[l]if Q(j)=="\115\116\114\105\110\103"then local Q=t(j)local U={}local c=1026445+-1026444 local O=-88851+88851 local I=-181227+181227 while c<=Q do local l=S(j,c,c)local J=e[l]if J then O=O+J*(865904+-865840)^((3664-3661)-I)I=I+(145754-145753)if I==964590-964586 then I=-868775-(-868775)local l=P(O/(77247+-11711))local Q=P((O%(587591+-522055))/(-963336+963592))local J=O%(863679+-863423)F(U,H(l,Q,J))O=-230858-(-230858)end elseif l=="\061"then F(U,H(P(O/(-892999+958535))))if c>=Q or S(j,c+(-351801-(-351802)),c+(-1041054+1041055))~="\061"then F(U,H(P((O%(-866769-(-932305)))/(-779622-(-779878)))))end break end c=c+(243716-243715)end D[l]=J(U)end end end return(function(l,J,e,t,F,H,S,U,Q,v,x,Z,I,O,o,j,z,k,c,g,D)Z,c,Q,x,D,j,O,v,o,k,U,g,I,z=function(l,P)local J=O(P)local e=function(e,t,F)return Q(l,{e,t,F},P,J)end return e end,765188+-765188,function(Q,e,t,F)local M,A,C,a,N,o,u,G,n,Y,B,j,p,d,V,i,K,f,m,y,O,r,q,b,L,W,s,S,I,X,w,E,c,R while Q do if Q<9901422-303659 then if Q<468311+4138796 then if Q<-637373+3236289 then if Q<198084+313674 then if Q<161008-(-174365)then if Q<-19253+282897 then if Q<747727-617634 then Q=5288853-898529 L=P(704540-642972)r=l[L]S=r else E=P(-493147-(-554699))Q=l[E]E=P(804501+-742944)l[E]=Q Q=5240631-732682 end else O=P(-773577-(-835168))c=l[O]O=P(996723+-935141)j=c[O]O=D[t[-311721+311722]]c={j(O)}Q=l[P(-512713-(-574305))]S={J(c)}end else if Q<482833-104876 then O=153273+-153116 c=D[t[-662571+662573]]j=c*O c=-406329+17207866178 S=j+c j=9094+35184372079738 Q=S%j D[t[-767464+767466]]=Q j=D[t[-729022+729025]]Q=4918576-(-119361)c=-618400-(-618401)S=j~=c else q=752589-752587 R=d[q]Q=6211466-(-538228)q=D[W]G=R==q u=G end end else if Q<1829050-101923 then if Q<1491079-292381 then E=-461722+461722 f=#V Q=14619558-(-963055)b=f==E else Q=-167887+10807631 end else if Q<125819+2226896 then Q=l[P(-876171-(-937756))]S={}else Q=true D[t[841774-841773]]=Q S={}Q=l[P(-38310+99875)]end end end else if Q<5066215-956671 then if Q<2959731-(-795481)then if Q<4061081-856452 then if Q<1734740-(-882356)then Q=S and 837106+15661237 or 2104622-(-517344)else Q=D[t[702009-702002]]Q=Q and 237994+6994971 or 6968013-(-819582)end else A=D[c]u=A Q=A and 4813865-187699 or 305746+8386196 end else if Q<130956+3872704 then Q=true Q=Q and 9319609-(-907931)or 12139552-791234 else Q=D[m]E=305808+-305802 B=-669485-(-669486)s=Q(B,E)E=P(951270+-889718)Q=P(-542071+603623)l[Q]=s B=l[E]E=-798260+798262 Q=B>E Q=Q and-745223+12334175 or 201696-6565 end end else if Q<-429654+4824330 then if Q<775661+3611843 then c=D[t[-471176+471179]]O=-723129+723130 j=c~=O Q=j and-97368+11920167 or 374382+4663555 else r=U()D[r]=S L=351346+-351343 Q=D[m]y=893153+-893088 S=Q(L,y)L=U()D[L]=S Q=678504-678504 V=P(432407+-370824)y=Q S=l[V]Q=745525-745525 b=v(15411459-(-118701),{})N=Q V={S(b)}S=-213732+213734 Q={J(V)}V=Q B=P(635386+-573832)Q=V[S]S=P(-925033-(-986599))b=Q Q=l[S]f=D[O]s=l[B]B=s(b)s=P(330230+-268679)w=f(B,s)f={w()}S=Q(J(f))f=U()D[f]=S w=D[L]S=65690-65689 s=w w=-121985-(-121986)B=w w=-132702+132702 E=B<w Q=7601640-368037 w=S-B end else if Q<4935825-435134 then p=D[o]Q=14870745-(-772329)S=p else Q=13910853-(-165126)end end end end else if Q<6238985-(-734893)then if Q<6343974-316998 then if Q<632528+4585036 then if Q<-415931+5483615 then if Q<-172152+5135556 then G=515359+-515358 A=d[G]u=A Q=548530+8143412 else O=-552460-(-552569)c=D[t[990614+-990611]]j=c*O c=-493258-(-493515)S=j%c D[t[-928317+928320]]=S Q=3955455-(-430929)end else j=P(930015-868458)S=P(-541477-(-603029))Q=l[S]S=l[j]j=P(-933270-(-994827))l[j]=Q Q=9655422-(-984322)j=P(-135284-(-196836))l[j]=S j=D[t[-745026-(-745027)]]c=j()end else if Q<6827913-842144 then s=y==N w=s Q=14186753-(-776110)else S={}Q=l[P(-427888+489465)]end end else if Q<7025365-269728 then if Q<232769+6114993 then S=P(-162092-(-223664))j=P(403892-342321)Q=l[S]S=Q(j)S={}Q=l[P(-320638+382193)]else S=u Q=A Q=12622429-(-209363)end else if Q<-804291+7631569 then A=Q q=393481-393480 R=d[q]q=false G=R==q Q=G and 431344+-21868 or 6364715-(-384979)u=G else M=-394487-(-394742)K=P(-310458-(-372028))a=U()D[a]=w Y=-349250-(-349350)S=l[K]K=P(539729+-478154)Q=S[K]K=-256060+256061 S=Q(K,Y)K=U()D[K]=S X=-33491+33491 W=-286300+286301 Q=D[m]Y=906172-906172 S=Q(Y,M)Y=U()i=-1014826+1024826 M=678625-678624 D[Y]=S Q=D[m]G=P(-788519-(-850073))d=263882+-263880 C=D[K]S=Q(M,C)M=U()D[M]=S S=D[m]C=S(W,d)d=P(-609535+671094)S=-448536-(-448537)Q=C==S C=U()S=P(-876858+938409)D[C]=Q A=l[G]Q=P(141678+-80089)R=D[m]q={R(X,i)}G=A(J(q))A=P(124870+-63311)u=G..A Q=b[Q]W=d..u d=P(-496058-(-557641))Q=Q(b,S,W)W=U()D[W]=Q u=Z(13655124-(-288267),{m,a;L;O;c;f,C,W;K;M,Y,r})S=l[d]d={S(u)}Q={J(d)}d=Q Q=D[C]Q=Q and 285247+7411553 or-550918+4087871 end end end else if Q<7768693-4678 then if Q<7854292-575426 then if Q<926327+6307140 then if Q<6254609-(-854968)then Q=6895396-(-338207)K=g(K)M=g(M)W=g(W)Y=g(Y)d=nil C=g(C)a=g(a)else j=P(178673+-117101)Q=l[j]O=625571+-625571 c=D[t[-942343-(-942351)]]j=Q(c,O)Q=7996780-209185 end else w=w+B S=w<=s a=not E S=a and S a=w>=s a=E and a S=a or S a=-719059+7643808 Q=S and a S=804632+11055966 Q=Q or S end else if Q<134284+7615062 then u=D[c]Q=u and-271154+7075599 or 11947182-(-884610)S=u else c=P(701902-640323)S=663811+10280797 O=4483778-843059 j=c^O Q=S-j S=P(-532540-(-594107))j=Q Q=S/j S={Q}Q=l[P(-615813-(-677371))]end end else if Q<78074+8595093 then if Q<8090304-(-171670)then c=-644887+644888 O=D[t[123434+-123425]]I=O Q={}O=-618025+618026 o=O O=219238-219238 p=o<O j=Q O=c-o Q=-915463+17061287 else B=P(-963026+1024582)n=L s=l[B]B=P(169401-107852)w=s[B]Q=13342314-208402 s=w(j,n)w=D[t[-735490-(-735496)]]B=w()f=s+B b=f+p B=349296+-349295 f=-1020763-(-1021019)V=b%f f=O[c]p=V n=nil s=p+B w=I[s]b=f..w O[c]=b end else if Q<9116121-277910 then D[c]=u q=D[M]X=-1014310+1014311 R=q+X G=d[R]A=y+G G=-478363+478619 Q=A%G y=Q R=D[Y]G=N+R Q=7119378-47556 R=261976+-261720 A=G%R N=A else c=D[t[711648+-711646]]O=D[t[-579899+579902]]Q=-11879+2621764 j=c==O S=j end end end end end else if Q<872822+12995204 then if Q<-659078+12037565 then if Q<-704004+11362927 then if Q<-559800+11118665 then if Q<10235193-(-96025)then if Q<9506272-(-358772)then j=D[t[-526999+527000]]S=#j j=-655597-(-655597)Q=S==j Q=Q and 503281+-153826 or-44154+351535 else Q=509275+13566704 end else j=nil Q=-124003+2745969 D[t[-179982+179987]]=S end else if Q<57231+10594279 then Q=true Q=Q and 667621+4415446 or 2880037-581285 else f=U()p=nil d=P(-30664-(-92254))b={}D[f]=b E=z(9712313-52278,{f;r,L;o})b=U()S={}C=P(393074+-331527)a=U()D[b]=E G=nil K=P(6868+54706)m=nil E={}Y={}o=g(o)D[a]=E Q=l[P(381767+-320214)]E=l[K]W=D[a]M={[C]=W;[d]=G}n=nil y=nil K=E(Y,M)I=nil O=K E=x(399199+10340137,{a,f;N,r,L,b})o=P(-1042544+1104137)b=g(b)f=g(f)N=g(N)a=g(a)c=E V=nil I=l[o]m=P(931142-869592)L=g(L)r=g(r)y=8017470958603-(-647818)L=P(1047850-986302)p=l[m]r=c(L,y)n=O[r]c=nil r=P(84503-22941)r=p[r]m={r(p,n)}o=I(J(m))I=o()O=nil end end else if Q<-159122+11225972 then if Q<-826826+11786481 then Q=D[t[-70807+70808]]O=Q c=e[120551-120549]Q=O[c]Q=Q and 10143025-(-980713)or-788903+11748989 j=e[1014006+-1014005]else o=35184371610441-(-478391)Q={}D[t[446777-446775]]=Q S=D[t[-179515+179518]]I=S Q=13778282-644370 S=c%o L=82546+-82545 m=777788+-777533 D[t[-994176-(-994180)]]=S p=c%m m=479145+-479143 o=p+m n=P(-982069-(-1043625))D[t[613882-613877]]=o m=l[n]n=P(39700-(-21881))p=m[n]m=p(j)p=P(11487-(-50091))O[c]=p p=-662109+662153 y=L L=334277+-334277 N=y<L r=m n=410889-410888 L=n-y end else if Q<180535+11063982 then Q=-606555+14441392 else Q=v(332372-(-968108),{I})s={Q()}Q=l[P(-883615+945175)]S={J(s)}end end end else if Q<469581+11713996 then if Q<35237+11800310 then if Q<11956005-164706 then if Q<-760325+12372713 then a=P(-135577-(-197134))B=P(-70361-(-131915))Q=l[B]E=l[a]B=Q(E)Q=P(-239498-(-301050))l[Q]=B Q=4639046-131097 else c=O Q=D[t[-851903-(-851904)]]n=845670+-845670 r=278681+-278426 m=Q(n,r)Q=17102948-957124 j[c]=m c=nil end else c=D[t[206420-206417]]O=-731911-(-731943)j=c%O y=497134-497121 I=D[t[-815926+815930]]r=726648-726646 m=D[t[-725292+725294]]b=D[t[-27699+27702]]V=b-j b=-756718+756750 N=V/b L=y-N n=r^L Q=967231+-659850 p=m/n n=6981+-6980 o=I(p)I=4295659772-692476 O=o%I o=-720505-(-720507)I=o^j c=O/I I=D[t[423690-423686]]m=c%n n=-519047+4295486343 p=m*n o=I(p)I=D[t[-962093-(-962097)]]p=I(c)O=o+p m=420351-354815 o=745040-679504 c=nil I=O%o p=O-I r=689352+-689096 o=p/m O=nil m=355952-355696 p=I%m n=I-p m=n/r y=553784+-553528 r=108264-108008 n=o%r I=nil j=nil L=o-n r=L/y L={p,m,n,r}D[t[-384403-(-384404)]]=L m=nil n=nil r=nil o=nil p=nil end else if Q<260764+11598588 then m=nil Q=13739287-(-95550)I=nil p=nil else s=D[c]Q=s and 327240+4977981 or 282025+14680838 w=s end end else if Q<267371+12830695 then if Q<579504+11963455 then Q=true Q=11644401-296083 else Q=8044795-972973 D[c]=S end else if Q<1044329+12497460 then V=not N L=L+y n=L<=r n=V and n V=L>=r V=N and V n=V or n V=9384961-754654 Q=n and V n=11247722-(-596730)Q=Q or n else S={c}Q=l[P(345886+-284306)]end end end end else if Q<402138+15085572 then if Q<-911624+15377648 then if Q<13949142-(-425320)then if Q<13611889-(-464529)then if Q<13685325-(-279452)then o=409155-409153 c=D[t[504901+-504900]]I=477139+-477138 O=c(I,o)c=-775832-(-775833)j=O==c S=j Q=j and 3153420-543535 or 556184+8378818 else Q=true Q=Q and 4332740-295812 or 181946+5835701 end else Q=49260+16430278 end else if Q<122+14394185 then o=U()j=e O=P(-190284-(-251840))c=U()Q=true D[c]=Q S=l[O]O=P(-294313-(-355882))m=P(441553-379970)Q=S[O]n=z(1044712+1443642,{o})I=U()O=U()D[O]=Q Q=x(762718+5411659,{})D[I]=Q Q=false D[o]=Q p=l[m]m=p(n)S=m Q=m and 4831807-434116 or 884817+14758257 else b=f Y=b V[b]=Y Q=16693593-617301 b=nil end end else if Q<-922523+15922165 then if Q<115398+14821123 then Q=D[t[577241-577231]]c=D[t[277429+-277418]]j[Q]=c Q=D[t[-268955+268967]]c={Q(j)}S={J(c)}Q=l[P(-840905-(-902466))]else D[c]=w Q=D[c]Q=Q and-820353+15151823 or-179598+12717785 end else if Q<-937959+16284358 then O=D[t[-487128+487134]]Q=-791067+11127763 c=O==j S=c else f=#V E=-834139-(-834139)b=f==E Q=b and-73427+10725675 or 15512942-(-69671)end end end else if Q<15370509-(-708281)then if Q<14907991-(-753852)then if Q<-1002425+16633881 then if Q<-799429+16363039 then S=8141453-771855 O=14898372-458118 c=P(-772468-(-834032))j=c^O Q=S-j S=P(1025848+-964260)j=Q Q=S/j S={Q}Q=l[P(-214356-(-275919))]else f=626726-626725 E=#V b=I(f,E)Q=16312834-924337 f=p(V,b)Y=982652-982651 b=nil E=D[N]K=f-Y a=m(K)E[f]=a f=nil end else p=S m=P(1043-(-60527))S=l[m]m=P(-550763-(-612338))N=P(817383+-755792)Q=S[m]m=U()n=P(-107168+168759)D[m]=Q S=l[n]n=P(-67315-(-128899))Q=S[n]y=l[N]L=Q r=y n=Q Q=y and-452279+16820464 or-419533+16091828 end else if Q<16198145-142851 then S=r Q=L Q=r and-591128+4981452 or 159598-113109 else Y=not K f=f+a b=f<=E b=Y and b Y=f>=E Y=K and Y b=Y or b Y=-879111+15326548 Q=b and Y b=249347-(-471367)Q=Q or b end end else if Q<-1040610+17512711 then if Q<17166448-861782 then m=not p O=O+o c=O<=I c=m and c m=O>=I m=p and m c=m or c m=10771032-(-874965)Q=c and m c=-176233+14642802 Q=Q or c else V=P(-256516-(-318107))N=l[V]V=P(82803-21235)y=N[V]Q=437181+15235114 r=y end else if Q<-238004+16730351 then n=nil b=nil I=g(I)V=nil O=g(O)m=g(m)N=nil O=nil c=g(c)r=g(r)p=nil f=g(f)y=nil c=nil Q=21472+16054820 o=g(o)p=P(-260547+322117)o=l[p]p=P(457744-396171)y={}I=o[p]o=U()L=g(L)m=P(821056-759486)D[o]=I p=l[m]r=P(-542512-(-604068))m=P(-291853+353428)I=p[m]n=P(1001708-940117)m=l[n]n=P(956788-895206)p=m[n]n=l[r]L=U()r=P(609639+-548063)m=n[r]r=U()n=19760-19760 D[r]=n N=U()n=819161+-819159 D[L]=n n={}D[N]=y y=-807584+807584 f=439945+-439689 V={}b=-763940+763941 E=f f=-662632-(-662633)a=f f=-572103+572103 K=a<f f=b-a else S=P(448093-386527)I=P(-796421-(-857975))Q=l[S]r=k(6814466-(-938443),{})j=D[t[-590512+590516]]O=l[I]n=P(688004+-626421)m=l[n]n={m(r)}m=556674-556672 p={J(n)}o=p[m]I=O(o)O=P(1028192-966641)c=j(I,O)j={c()}S=Q(J(j))c=D[t[-165890-(-165895)]]Q=c and 361748+14970996 or-949898+11286594 j=S S=c end end end end end end end Q=#F return J(S)end,function(l,P)local J=O(P)local e=function(e,t,F,H,S)return Q(l,{e,t,F;H;S},P,J)end return e end,{},{},function(l)for P=583144-583143,#l,-979200+979201 do j[l[P]]=(699418-699417)+j[l[P]]end if e then local Q=e(true)local J=F(Q)J[P(554985-493438)],J[P(436290-374704)],J[P(442078+-380491)]=l,I,function()return 137646+-1555406 end return Q else return t({},{[P(571568-509982)]=I;[P(-377851-(-439398))]=l;[P(580947-519360)]=function()return-259990+-1157770 end})end end,function(l,P)local J=O(P)local e=function(e)return Q(l,{e},P,J)end return e end,function(l,P)local J=O(P)local e=function(...)return Q(l,{...},P,J)end return e end,function(l,P)local J=O(P)local e=function(e,t)return Q(l,{e,t},P,J)end return e end,function()c=(-466238+466239)+c j[c]=-412827+412828 return c end,function(l)j[l]=j[l]-(232870+-232869)if 588633+-588633==j[l]then j[l],D[l]=nil,nil end end,function(l)local P,Q=-886703+886704,l[744060-744059]while Q do j[Q],P=j[Q]-(256019-256018),(308373-308372)+P if j[Q]==-512960-(-512960)then j[Q],D[Q]=nil,nil end Q=l[P]end end,function(l,P)local J=O(P)local e=function(e,t,F,H)return Q(l,{e;t;F;H},P,J)end return e end return(o(13514850-(-878886),{}))(J(S))end)(getfenv and getfenv()or _ENV,unpack or table[P(710837+-649269)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+
+
+
+---- anti kick idc skid it
+
+
+
+local p=game:GetService("Players").LocalPlayer
+local mt=getrawmetatable(game)
+setreadonly(mt,false)
+
+local oldNamecall=mt.__namecall
+local oldIndex=mt.__index
+local oldNewIndex=mt.__newindex
+
+local function blockKickNamecall(self,...)
+    local method=getnamecallmethod()
+    if self==p and method=="Kick" then
+        warn("[AK] Blocked :Kick()")
+        warn(debug.traceback("",2))
+        return
+    end
+    return oldNamecall(self,...)
+end
+
+local function blockKickIndex(self,key)
+    if self==p and key=="Kick" then
+        warn("[AK] Blocked .Kick")
+        warn(debug.traceback("",2))
+        return function() end
+    end
+    return oldIndex(self,key)
+end
+
+local function blockKickNewIndex(self,key,value)
+    if self==p and key=="Kick" then
+        warn("[AK] Blocked setting .Kick")
+        warn(debug.traceback("",2))
+        return
+    end
+    return oldNewIndex(self,key,value)
+end
+
+local function hookNamecall()
+    mt.__namecall=newcclosure(blockKickNamecall)
+end
+
+local function hookIndex()
+    mt.__index=newcclosure(blockKickIndex)
+end
+
+local function hookNewIndex()
+    mt.__newindex=newcclosure(blockKickNewIndex)
+end
+
+local function protectKickFunc()
+    p.Kick=function(...)
+        warn("[AK] Blocked direct Kick call")
+        warn(debug.traceback("",2))
+    end
+end
+
+local function hookHookfunction()
+    if hookfunction then
+        pcall(function()
+            hookfunction(p.Kick,function(...)
+                warn("[AK] Blocked Kick via hookfunction")
+                warn(debug.traceback("",2))
+            end)
+        end)
+    end
+end
+
+local function hookMetamethod()
+    if hookmetamethod then
+        local oldHook=hookmetamethod
+        hookmetamethod=function(...)
+            local args={...}
+            if args[2]=="Kick" or args[2]=="__namecall" or args[2]=="__index" then
+                return
+            end
+            return oldHook(...)
+        end
+    end
+end
+
+local function disableConnections()
+    if getconnections then
+        local conns=getconnections(p.Kick)
+        for _,c in pairs(conns) do
+            c:Disable()
+            warn("[AK] Disabled Kick connection")
+        end
+    end
+end
+
+local function retryHooking()
+    task.spawn(function()
+        while true do
+            if mt.__namecall~=blockKickNamecall then
+                mt.__namecall=blockKickNamecall
+            end
+            if mt.__index~=blockKickIndex then
+                mt.__index=blockKickIndex
+            end
+            if mt.__newindex~=blockKickNewIndex then
+                mt.__newindex=blockKickNewIndex
+            end
+            if p.Kick~=function(...) warn("[AK] Blocked direct Kick call") warn(debug.traceback("",2)) end then
+                protectKickFunc()
+            end
+            task.wait(3)
+        end
+    end)
+end
+
+hookNamecall()
+hookIndex()
+hookNewIndex()
+protectKickFunc()
+hookHookfunction()
+hookMetamethod()
+retryHooking()
+
+local p=game:GetService("Players").LocalPlayer
+local mt=getrawmetatable(game)
+setreadonly(mt,false)
+local oldNamecall=mt.__namecall
+local oldIndex=mt.__index
+local oldNewIndex=mt.__newindex
+
+local function blockKick1(self,...)
+    local m=getnamecallmethod()
+    if self==p and m=="Kick" then return end
+    return oldNamecall(self,...)
+end
+
+local function blockKick2(self,key)
+    if self==p and key=="Kick" then return function() end end
+    return oldIndex(self,key)
+end
+
+local function blockKick3(self,key,value)
+    if self==p and key=="Kick" then return end
+    return oldNewIndex(self,key,value)
+end
+
+local function protectKickFunc1()
+    p.Kick=function() end
+end
+
+local function protectKickFunc2()
+    local orig=p.Kick
+    p.Kick=function(...)
+        warn("[AK] Blocked Kick call 2")
+        return orig(...)
+    end
+end
+
+local function hookHookfunction1()
+    if hookfunction then
+        pcall(function()
+            hookfunction(p.Kick,function(...) end)
+        end)
+    end
+end
+
+local function hookHookfunction2()
+    if hookfunction then
+        local ok,unhook=pcall(function()
+            return hookfunction(p.Kick,function(...)
+                warn("[AK] Hooked Kick")
+            end)
+        end)
+    end
+end
+
+local function hookMetamethod1()
+    if hookmetamethod then
+        local old=hookmetamethod
+        hookmetamethod=function(...)
+            local args={...}
+            if args[2]=="Kick" then return end
+            return old(...)
+        end
+    end
+end
+
+local function hookMetamethod2()
+    if hookmetamethod then
+        local old=hookmetamethod
+        hookmetamethod=function(self,mtName,...)
+            if mtName=="Kick" then return end
+            return old(self,mtName,...)
+        end
+    end
+end
+
+local function disableConnections1()
+    if getconnections then
+        for _,c in pairs(getconnections(p.Kick) or {}) do
+            c:Disable()
+        end
+    end
+end
+
+local function disableConnections2()
+    if getconnections then
+        local conns=getconnections(p.Kick)
+        for i=1,#conns do
+            conns[i]:Disable()
+        end
+    end
+end
+
+local function rehookNamecall()
+    mt.__namecall=newcclosure(function(self,...)
+        local m=getnamecallmethod()
+        if self==p and m=="Kick" then return end
+        return oldNamecall(self,...)
+    end)
+end
+
+local function rehookIndex()
+    mt.__index=newcclosure(function(self,k)
+        if self==p and k=="Kick" then return function() end end
+        return oldIndex(self,k)
+    end)
+end
+
+local function rehookNewIndex()
+    mt.__newindex=newcclosure(function(self,k,v)
+        if self==p and k=="Kick" then return end
+        return oldNewIndex(self,k,v)
+    end)
+end
+
+local function dummyKick()
+    p.Kick=function() end
+end
+
+local function dummyKick2()
+    local old=p.Kick
+    p.Kick=function(...)
+        return old(...)
+    end
+end
+
+local function dummyKick3()
+    local kicked=false
+    p.Kick=function()
+        if not kicked then
+            kicked=true
+        end
+    end
+end
+
+local function safeCall1()
+    pcall(function()
+        p.Kick=function() end
+    end)
+end
+
+local function safeCall2()
+    pcall(function()
+        mt.__namecall=newcclosure(function(self,...)
+            local m=getnamecallmethod()
+            if self==p and m=="Kick" then return end
+            return oldNamecall(self,...)
+        end)
+    end)
+end
+
+local function safeCall3()
+    pcall(function()
+        mt.__index=newcclosure(function(self,k)
+            if self==p and k=="Kick" then return function() end end
+            return oldIndex(self,k)
+        end)
+    end)
+end
+
+
+
+blockKick2()
+protectKickFunc1()
+protectKickFunc2()
+hookHookfunction1()
+hookHookfunction2()
+hookMetamethod1()
+hookMetamethod2()
+disableConnections1()
+disableConnections2()
+rehookNamecall()
+rehookIndex()
+rehookNewIndex()
+dummyKick()
+dummyKick2()
+dummyKick3()
+safeCall1()
+safeCall2()
+safeCall3()
+
+local p=game:GetService("Players").LocalPlayer
+local mt=getrawmetatable(game)
+setreadonly(mt,false)
+local oldNamecall=mt.__namecall
+local oldIndex=mt.__index
+local oldNewIndex=mt.__newindex
+local rs=game:GetService("RunService")
+
+local function blockKickNamecall1()
+    mt.__namecall=newcclosure(function(self,...)
+        if self==p and getnamecallmethod()=="Kick" then return end
+        return oldNamecall(self,...)
+    end)
+end
+
+local function blockKickIndex1()
+    mt.__index=newcclosure(function(self,k)
+        if self==p and k=="Kick" then return function() end end
+        return oldIndex(self,k)
+    end)
+end
+
+local function blockKickNewIndex1()
+    mt.__newindex=newcclosure(function(self,k,v)
+        if self==p and k=="Kick" then return end
+        return oldNewIndex(self,k,v)
+    end)
+end
+
+local function dummyKick1()
+    p.Kick=function() end
+end
+
+local function disconnectKickConns1()
+    if getconnections then
+        for _,c in pairs(getconnections(p.Kick) or {}) do
+            c:Disable()
+        end
+    end
+end
+
+local function blockKickNamecall2()
+    mt.__namecall=newcclosure(function(self,...)
+        local method=getnamecallmethod()
+        if self==p and (method=="Kick" or method=="Destroy" or method=="BreakJoints") then return end
+        return oldNamecall(self,...)
+    end)
+end
+
+local function fakeMetatable1()
+    local proxy={}
+    local proxyMt={
+        __index=function(t,k)
+            if k=="Kick" then return function() end end
+            return oldIndex(p,k)
+        end,
+        __newindex=function(t,k,v)
+            if k=="Kick" then return end
+            oldNewIndex(p,k,v)
+        end,
+    }
+    setmetatable(proxy,proxyMt)
+    _G.fakePlayer=proxy
+end
+
+local function hookFunctionOverride()
+    if hookfunction then
+        local ok,unhook=pcall(function()
+            return hookfunction(p.Kick,function(...) end)
+        end)
+    end
+end
+
+local function safePcallOverride()
+    pcall(function()
+        p.Kick=function() end
+    end)
+end
+
+local function repeatedBlock()
+    task.spawn(function()
+        while true do
+            p.Kick=function() end
+            task.wait(0.5)
+        end
+    end)
+end
+
+local function obfuscationJunk1()
+    local a,b,c,d,e,f,g,h,i,j=math.random(),math.random(),math.random(),math.random(),math.random(),math.random(),math.random(),math.random(),math.random(),math.random()
+    local x=a+b-c*d+e/f-g+h*i-j
+end
+
+local function protectKickFunc()
+    local old=p.Kick
+    p.Kick=function(...)
+        warn("[AK] Kick prevented")
+        return old(...)
+    end
+end
+
+local function overrideKickWithClosure()
+    local closed=false
+    p.Kick=function()
+        if closed then return end
+        closed=true
+    end
+end
+
+local function blockKickNamecall3()
+    mt.__namecall=newcclosure(function(self,...)
+        if self==p and getnamecallmethod()=="Kick" then return end
+        return oldNamecall(self,...)
+    end)
+end
+
+local function delayDisableConnections()
+    task.spawn(function()
+        task.wait(1)
+        if getconnections then
+            for _,c in pairs(getconnections(p.Kick) or {}) do
+                c:Disable()
+            end
+        end
+    end)
+end
+
+local function randomJunkVars()
+    local zxc,asd,qwe,rty,uio,pas=dfkj(),plk(),mok(),yiw(),rto(),vbn()
+end
+
+local function overrideMetatableIndex()
+    local old=mt.__index
+    mt.__index=newcclosure(function(self,k)
+        if self==p and k=="Kick" then return function() end end
+        return old(self,k)
+    end)
+end
+
+local function overrideMetatableNewIndex()
+    local old=mt.__newindex
+    mt.__newindex=newcclosure(function(self,k,v)
+        if self==p and k=="Kick" then return end
+        return old(self,k,v)
+    end)
+end
+
+blockKickNamecall1()
+blockKickIndex1()
+blockKickNewIndex1()
+dummyKick1()
+disconnectKickConns1()
+blockKickNamecall2()
+fakeMetatable1()
+hookFunctionOverride()
+safePcallOverride()
+repeatedBlock()
+obfuscationJunk1()
+protectKickFunc()
+overrideKickWithClosure()
+blockKickNamecall3()
+delayDisableConnections()
+randomJunkVars()
+overrideMetatableIndex()
+overrideMetatableNewIndex()
+
+local p = game:GetService("Players").LocalPlayer
+local mt = getrawmetatable(game)
+setreadonly(mt,false)
+local oldNamecall = mt.__namecall
+local oldIndex = mt.__index
+local oldNewIndex = mt.__newindex
+local rs = game:GetService("RunService")
+
+local Proxy = newproxy(true)
+local pm = getmetatable(Proxy)
+pm.__tostring = function() return "PlayerProxy" end
+pm.__index = function(t,k)
+    if k == "Kick" then return function() end end
+    return rawget(t,k)
+end
+pm.__newindex = function(t,k,v)
+    if k == "Kick" then return end
+    rawset(t,k,v)
+end
+
+local function useProxyPlayer()
+    _G.ProxyPlayer = Proxy
+end
+
+local function spoofConnections()
+    if getconnections then
+        local cons = getconnections(p.Kick) or {}
+        for i=1,#cons do
+            coroutine.wrap(function()
+                while true do
+                    cons[i]:Enable()
+                    task.wait(0.3)
+                    cons[i]:Disable()
+                    task.wait(0.3)
+                end
+            end)()
+        end
+    end
+end
+
+local function overrideKickSignal()
+    if p.Kick and typeof(p.Kick) == "RBXScriptSignal" then
+        local oldFire = p.Kick.Fire
+        p.Kick.Fire = function() end
+    end
+end
+
+local function swapMetatable()
+    local fakeMT = {}
+    for k,v in pairs(mt) do
+        fakeMT[k] = v
+    end
+    fakeMT.__namecall = newcclosure(function(self,...)
+        if self == p and getnamecallmethod() == "Kick" then
+            return
+        end
+        return oldNamecall(self,...)
+    end)
+    debug.setmetatable(p, fakeMT)
+end
+
+local function blockKickEvent()
+    if p:FindFirstChild("KickEvent") then
+        p.KickEvent:Disconnect()
+    end
+end
+
+local function blockDestroy()
+    mt.__namecall = newcclosure(function(self,...)
+        if self == p and getnamecallmethod() == "Destroy" then
+            return
+        end
+        return oldNamecall(self,...)
+    end)
+end
+
+local function hookRawMetatable()
+    local rawMT = getrawmetatable(p)
+    rawMT.__index = newcclosure(function(self,k)
+        if k == "Kick" then return function() end end
+        return oldIndex(self,k)
+    end)
+end
+
+local function overwriteKickWithError()
+    p.Kick = function()
+        error("Kick blocked")
+    end
+end
+
+local function lockPosition()
+    local root = p.Character and p.Character:FindFirstChild("HumanoidRootPart")
+    if not root then return end
+    local pos = root.CFrame
+    local locked = false
+    local conn
+    conn = rs.Heartbeat:Connect(function()
+        if locked then return end
+        locked = true
+        root.CFrame = pos
+        locked = false
+    end)
+    task.delay(5,function() conn:Disconnect() end)
+end
+
+local function blockDestroyAndBreak()
+    mt.__namecall = newcclosure(function(self,...)
+        local method = getnamecallmethod()
+        if self == p and (method == "Destroy" or method == "BreakJoints") then
+            return
+        end
+        return oldNamecall(self,...)
+    end)
+end
+
+local function infiniteDummyKick()
+    task.spawn(function()
+        while true do
+            p.Kick = function() end
+            task.wait(0.1)
+        end
+    end)
+end
+
+local function fakeCharacterSpawn()
+    local fakeChar = Instance.new("Model")
+    fakeChar.Name = p.Name.."_Fake"
+    fakeChar.Parent = workspace
+    local hrp = Instance.new("Part", fakeChar)
+    hrp.Name = "HumanoidRootPart"
+    hrp.Anchored = true
+    hrp.Size = Vector3.new(2,2,1)
+    hrp.CFrame = CFrame.new(0,1000,0)
+end
+
+local function blockKickOnEvents()
+    local kickConnections = {}
+    if getconnections then
+        kickConnections = getconnections(p.Kick) or {}
+    end
+    for i=1,#kickConnections do
+        pcall(function() kickConnections[i]:Disable() end)
+    end
+end
+
+local function overrideMetatableWithProxy()
+    local proxyTbl = {}
+    local proxyMT = {
+        __index = function(t,k)
+            if k == "Kick" then return function() end end
+            return oldIndex(p,k)
+        end,
+        __newindex = function(t,k,v)
+            if k == "Kick" then return end
+            return oldNewIndex(p,k,v)
+        end,
+        __namecall = newcclosure(function(self,...)
+            if self == p and getnamecallmethod() == "Kick" then
+                return
+            end
+            return oldNamecall(self,...)
+        end)
+    }
+    setmetatable(proxyTbl, proxyMT)
+    _G.ProxyTbl = proxyTbl
+end
+
+local function spoofNamecallHook()
+    if hookmetamethod then
+        local oldHook = hookmetamethod
+        hookmetamethod = function(self,mtName,...)
+            if mtName == "Kick" then
+                return
+            end
+            return oldHook(self,mtName,...)
+        end
+    end
+end
+
+local function replaceKickWithNoop()
+    p.Kick = function() end
+end
+
+local function blockKickWithLoop()
+    task.spawn(function()
+        while true do
+            p.Kick = function() end
+            task.wait(0.2)
+        end
+    end)
+end
+
+
+useProxyPlayer()
+spoofConnections()
+overrideKickSignal()
+swapMetatable()
+blockKickEvent()
+blockDestroy()
+hookRawMetatable()
+overwriteKickWithError()
+lockPosition()
+blockDestroyAndBreak()
+infiniteDummyKick()
+fakeCharacterSpawn()
+blockKickOnEvents()
+overrideMetatableWithProxy()
+spoofNamecallHook()
+replaceKickWithNoop()
+blockKickWithLoop()
+
