@@ -4,7 +4,9 @@ local Z,bb,o,Mh,O,Qf=pairs,type,bit32.bxor,getmetatable;local sd,ml,fh,jk,Bg,hi,
 
 
 
----- this part is anti kick it is open sourced already but other ağprt is main script and it is protected skidder
+---- this part is anti kick it is open sourced already but other part is main script and it is protected skidder
+
+print("[AK] Loading...")
 
 local p=game:GetService("Players").LocalPlayer
 local mt=getrawmetatable(game)
