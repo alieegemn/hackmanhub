@@ -1,5 +1,5 @@
 -- Anti Skid By HackManHub
- loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/b5eac4640d4e4148a358064ff5bb086d"))()
+loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/536b8b0e50a14fbebfbd8125eee710bf"))()
 
 
 
