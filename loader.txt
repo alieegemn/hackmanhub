@@ -1,2 +1,1 @@
-loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/d1b026479a354580983447426b08ba0e"))()
-setclipboard(https://discord.gg/cuwKyeuCVR)
+loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/f4ae2fb9ef6d43a1b99eb052db7fcd0f"))()
