@@ -7,6 +7,17 @@
     "description": "One-time purchase. Lifetime access to premium features and updates.",
     "tax_rate": 0
   }
+
+
+    {
+    "id": "petnotifer-1",
+    "name": "HackManHub Brainrot Notifer — Monthly",
+    "price_eur": 5,
+    "image": "./assets/premium-key.jpg",
+    "description": "Monthly purchase. access to best servers and and more.",
+    "tax_rate": 0
+  }
 ]
+
 
 
