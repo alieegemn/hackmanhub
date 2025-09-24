@@ -374,14 +374,15 @@
   btnExample.addEventListener('click', () => {
     const example = [
       '-- Example Lua script',
-      'local function greet(name)',
-      '  local msg = "Hello, \\"..name.."!"',
-      '  print(msg)',
-      'end',
-      'greet("world")',
+      'print("example")',
+      '  print("https://hackmanhub.pages.dev")',
+      '  print("https://payhubtr.store")',
+      'print("https://hackmanhub.pages.dev/discord")',
+      'print("end yay")',
       ''
     ].join('\n');
     inputEl.value = example;
   });
 })();
+
 
