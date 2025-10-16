@@ -1,4 +1,47 @@
 
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+
+local player = Players.LocalPlayer
+
+local function onErrorMessageChanged(errorMessage)
+    if errorMessage and errorMessage ~= "" then
+        print("Error detected: " .. errorMessage)
+
+        if player then
+            wait()
+            setclipboard("https://volcano.wtf")
+			LocalPlayer:Kick("Unsupported Executor Detected Please Use volcano.wtf its free if you are using xeno download link copied paste and download ") 
+        end
+    end
+end
+
+GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged)
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local GuiService = game:GetService("GuiService")
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+
+local player = Players.LocalPlayer
+
+local function onErrorMessageChanged(errorMessage)
+    if errorMessage and errorMessage ~= "" then
+        print("Error detected: " .. errorMessage)
+
+        if player then
+            wait()
+            setclipboard("https://volcano.wtf")
+			LocalPlayer:Kick("Unsupported Executor Detected Please Use volcano.wtf its free if you are using xeno download link copied paste and download ") 
+        end
+    end
+end
+
+GuiService.ErrorMessageChanged:Connect(onErrorMessageChanged)
 
 
 
