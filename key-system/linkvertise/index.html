@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Link</title>
+    <style>
+        /* General Setup and Variables */
+        :root {
+            --dark-bg: #121212;
+            --card-bg: #1f1f1f;
+            --orange-glow: #ff9900;
+            --text-color: #f0f0f0;
+            --dark-text: #222222;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(31, 31, 31, 0.8); 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), 0 0 20px var(--orange-glow); 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: filter 0.3s ease; /* Transition for main content blur */
+        }
+        
+        /* Blur class for main content when modal is active */
+        .container.blurred {
+            filter: blur(5px) brightness(0.7);
+            pointer-events: none;
+        }
+
+        /* Titles and Status */
+        h1 {
+            font-size: 1.8em;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+
+        .progress-indicator {
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: var(--orange-glow);
+            text-shadow: 0 0 5px rgba(255, 153, 0, 0.5);
+        }
+
+        /* Checkpoint Buttons */
+        .checkpoint-button {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: var(--card-bg);
+            border: 2px solid #333;
+            border-radius: 10px;
+            color: var(--text-color);
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-decoration: none; 
+        }
+
+        .checkpoint-button:hover {
+            border-color: var(--orange-glow);
+            background-color: #2a2a2a;
+        }
+        
+        /* Icon Styling (Hackmanhub icon) */
+        .checkpoint-icon {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 3px rgba(255, 153, 0, 0.8)); /* Orange glow for the image */
+            margin-right: 15px;
+        }
+        
+        .checkpoint-text {
+            flex-grow: 1;
+        }
+
+        .checkpoint-name {
+            font-weight: 600;
+            font-size: 1em;
+        }
+
+        .checkpoint-status {
+            font-size: 0.8em;
+            color: #999999;
+        }
+        
+        /* Status Icons (Tick/Not Completed image container) */
+        .status-icon {
+            margin-left: 10px;
+            width: 20px; 
+            height: 20px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .status-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Continue Button */
+        .continue-button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 700;
+            text-align: center;
+            cursor: not-allowed;
+            opacity: 0.5;
+            background-color: var(--orange-glow);
+            color: var(--dark-text);
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .continue-button.active {
+            cursor: pointer;
+            opacity: 1;
+            box-shadow: 0 0 15px var(--orange-glow);
+        }
+
+        .continue-button.active:hover {
+            background-color: #e68a00;
+        }
+
+        /* Modal/Overlay Styles (For Blur and Wait 3) */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.3s;
+        }
+        
+        .modal-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            padding: 30px 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            min-width: 250px;
+            border: 2px solid var(--orange-glow);
+        }
+
+        .modal-content p {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: var(--orange-glow);
+            margin: 0;
+        }
+
+        .next-button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.2s;
+        }
+        
+        .next-button:hover {
+            background-color: #45a049;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Modal Overlay (Initially Hidden) -->
+    <div class="modal-overlay hidden" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+            <p id="modalText"></p>
+            <button id="modalNextButton" class="next-button hidden" data-target-id="">Next &rarr;</button>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container" id="mainContainer">
+        <h1>Required Steps</h1>
+        <p class="subtitle">Complete the steps below to goto key system.</p>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator" id="progressIndicator">0/3 tasks completed</div>
+
+        <!-- Checkpoint Buttons -->
+        <div class="checkpoint-list">
+            
+            <!-- Checkpoint 1 (Discord Example) -->
+            <a id="checkpoint-1" href="https://hackmanhub.pages.dev/discord" target="_blank" class="checkpoint-button" data-completed="false">
+                <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord Icon" class="checkpoint-icon">
+                <div class="checkpoint-text">
+                    <div class="checkpoint-name">Join Discord Server</div>
+                    <div class="checkpoint-status">Redirects instantly, confirm upon return.</div>
+                </div>
+                <span class="status-icon"><img src="https://hackmanhub.pages.dev/notcompalted.png" alt="Not Completed" class="status-img"></span>
+            </a>
+
+            <!-- Checkpoint 2 (YouTube Example) -->
+            <a id="checkpoint-2" href="https://example.com/youtube" target="_blank" class="checkpoint-button" data-completed="false">
+                <img src="https://hackmanhub.pages.dev/icon.png" alt="YouTube Icon" class="checkpoint-icon">
+                <div class="checkpoint-text">
+                    <div class="checkpoint-name">Subscribe on YouTube</div>
+                    <div class="checkpoint-status">Redirects instantly, confirm upon return.</div>
+                </div>
+                <span class="status-icon"><img src="https://hackmanhub.pages.dev/notcompalted.png" alt="Not Completed" class="status-img"></span>
+            </a>
+
+            <!-- Checkpoint 3 (Website Example) -->
+            <a id="checkpoint-3" href="https://example.com/website" target="_blank" class="checkpoint-button" data-completed="false">
+                <img src="https://hackmanhub.pages.dev/icon.png" alt="Website Icon" class="checkpoint-icon">
+                <div class="checkpoint-text">
+                    <div class="checkpoint-name">Visit Our Website</div>
+                    <div class="checkpoint-status">Redirects instantly, confirm upon return.</div>
+                </div>
+                <span class="status-icon"><img src="https://hackmanhub.pages.dev/notcompalted.png" alt="Not Completed" class="status-img"></span>
+            </a>
+            
+        </div>
+
+        <!-- Continue Button -->
+        <button id="continueButton" class="continue-button" disabled>Continue &rarr;</button>
+    </div>
+
+    <script>
+        const mainContainer = document.getElementById('mainContainer');
+        const checkpoints = document.querySelectorAll('.checkpoint-button');
+        const continueButton = document.getElementById('continueButton');
+        const progressIndicator = document.getElementById('progressIndicator');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const modalText = document.getElementById('modalText');
+        const modalNextButton = document.getElementById('modalNextButton');
+        const TOTAL_CHECKPOINTS = checkpoints.length;
+        const PENDING_TASK_KEY = 'pendingTaskId'; // Key to store the task ID waiting for completion
+
+        // --- Configuration for Custom Status Icons ---
+        const ICON_TICK = 'https://hackmanhub.pages.dev/tick.png';
+        const ICON_NOT_COMPLETED = 'https://hackmanhub.pages.dev/notcompalted.png';
+
+
+        // 1. MANDATORY RESET: Clear local storage to ensure full reset on every refresh (F5)
+        localStorage.clear();
+
+        // --- Core Logic Functions ---
+
+        function updateProgress() {
+            let completedCount = 0;
+            
+            // Re-check state from local storage
+            checkpoints.forEach(checkpoint => {
+                const isCompleted = localStorage.getItem(checkpoint.id) === 'true';
+                const statusImg = checkpoint.querySelector('.status-img');
+
+                if (isCompleted) {
+                    completedCount++;
+                    checkpoint.setAttribute('data-completed', 'true');
+                    statusImg.src = ICON_TICK; 
+                    checkpoint.style.pointerEvents = 'none'; 
+                    checkpoint.style.opacity = '0.7';
+                } else {
+                    // Ensure UI is reset 
+                    checkpoint.setAttribute('data-completed', 'false');
+                    statusImg.src = ICON_NOT_COMPLETED; 
+                    checkpoint.style.pointerEvents = 'auto'; 
+                    checkpoint.style.opacity = '1';
+                }
+            });
+
+            // Update text indicator
+            progressIndicator.textContent = `${completedCount}/${TOTAL_CHECKPOINTS} tasks completed`;
+
+            // Enable/Disable Continue button
+            if (completedCount === TOTAL_CHECKPOINTS) {
+                continueButton.classList.add('active');
+                continueButton.removeAttribute('disabled');
+            } else {
+                continueButton.classList.remove('active');
+                continueButton.setAttribute('disabled', 'true');
+            }
+        }
+        
+        function hideModal() {
+            // Unblur the main container and hide the overlay
+            mainContainer.classList.remove('blurred');
+            modalOverlay.classList.add('hidden');
+            modalText.classList.remove('hidden'); // Reset text visibility for next time
+            modalNextButton.classList.add('hidden'); // Hide button for next time
+        }
+
+        // --- Modal & Countdown Logic ---
+
+        function showModal(clickedCheckpoint) {
+            // 1. Blur and show modal
+            mainContainer.classList.add('blurred');
+            modalOverlay.classList.remove('hidden');
+            
+            // 2. Setup initial state
+            modalText.textContent = 'Wait 3...';
+            modalNextButton.dataset.targetId = clickedCheckpoint.id; // Store link info
+            
+            // 3. Countdown logic
+            let timer = 3;
+            modalText.textContent = `Wait ${timer}...`;
+
+            const countdownInterval = setInterval(() => {
+                timer--;
+                if (timer > 0) {
+                    modalText.textContent = `Wait ${timer}...`;
+                } else {
+                    clearInterval(countdownInterval);
+                    
+                    // 4. Countdown finished: Show Next button
+                    modalText.classList.add('hidden');
+                    modalNextButton.classList.remove('hidden');
+                }
+            }, 1000);
+        }
+
+        // --- Event Listeners ---
+
+        // 1. Click Checkpoint: Redirect and set PENDING state
+        checkpoints.forEach(checkpoint => {
+            checkpoint.addEventListener('click', (event) => {
+                event.preventDefault(); // Stop default link behavior
+                
+                if (checkpoint.getAttribute('data-completed') === 'true') {
+                    return; // Ignore if already complete
+                }
+                
+                // Set the pending state before redirecting
+                localStorage.setItem(PENDING_TASK_KEY, checkpoint.id);
+
+                // Open Link IMMEDIATELY (in new tab)
+                const url = checkpoint.href;
+                window.open(url, '_blank');
+
+                // The modal is NOT shown here. It waits for the user to return.
+            });
+        });
+        
+        // 2. Visibility Change: Start Wait sequence when user returns to the tab
+        document.addEventListener('visibilitychange', () => {
+            // Check if the user is returning to the tab (document becomes visible)
+            if (document.visibilityState === 'visible') {
+                const pendingId = localStorage.getItem(PENDING_TASK_KEY);
+                
+                if (pendingId) {
+                    const pendingCheckpoint = document.getElementById(pendingId);
+                    
+                    if (pendingCheckpoint && pendingCheckpoint.getAttribute('data-completed') !== 'true') {
+                        // Start the modal/wait sequence only upon return
+                        showModal(pendingCheckpoint);
+                    } else {
+                        // Task might have been completed via another mechanism (unlikely but safe)
+                        localStorage.removeItem(PENDING_TASK_KEY);
+                        updateProgress();
+                    }
+                }
+            }
+        });
+
+
+        // 3. Modal Next Button Click: Confirm Completion and Unblur
+        modalNextButton.addEventListener('click', () => {
+            const targetId = modalNextButton.dataset.targetId;
+            
+            // Mark task as completed
+            localStorage.setItem(targetId, 'true'); 
+            
+            // Clear the pending task state
+            localStorage.removeItem(PENDING_TASK_KEY); 
+
+            // Hide modal and unblur
+            hideModal();
+            
+            // Update progress
+            setTimeout(updateProgress, 100); 
+        });
+
+
+        // Optional: Handler for the final Continue button
+        continueButton.addEventListener('click', () => {
+            if (!continueButton.hasAttribute('disabled')) {
+                // Redirect user to the final destination
+                window.location.href = 'https://ads.luarmor.net/get_key?for=HackManHub__Linkvertise-xUEkjjclsjbI';
+            }
+        });
+
+        // Initialize state on page load
+        window.onload = updateProgress;
+    </script>
+
+</body>
+</html>
